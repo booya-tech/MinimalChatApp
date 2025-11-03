@@ -20,7 +20,7 @@ class RegisterPage extends StatelessWidget {
         _auth.signUpWithEmailPasswrd(
             _emailController.text,
             _pwController.text
-        );
+        ); 
       } catch (e) {
         showDialog(
           context: context,
