@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:minimal_chatapp/auth/auth_service.dart';
-import 'components/my_button.dart';
-import 'components/my_textfield.dart';
+import '../components/my_button.dart';
+import '../components/my_textfield.dart';
+import '../services/auth/auth_service.dart';
 
 class RegisterPage extends StatelessWidget {
   final TextEditingController _emailController = TextEditingController();
@@ -20,7 +20,7 @@ class RegisterPage extends StatelessWidget {
         _auth.signUpWithEmailPasswrd(
             _emailController.text,
             _pwController.text
-        ); 
+        );
       } catch (e) {
         showDialog(
           context: context,

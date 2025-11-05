@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:minimal_chatapp/auth/auth_service.dart';
 import 'package:minimal_chatapp/components/my_button.dart';
 import 'package:minimal_chatapp/components/my_textfield.dart';
+import '../services/auth/auth_service.dart';
 
 class LoginPage extends StatelessWidget {
   final TextEditingController _emailController = TextEditingController();
